@@ -22,12 +22,17 @@
        h5{
         text-align: center;
        }
-      
-      
-       
+       .box{
+        border:2px solid grey;
+       }
+       .box2{
+        border:2px solid grey;
+       }
     </style>
 </head>
 <body>
+    <div class="box">
+        <h1>Nested ordered and unordered list</h1>
     <ol type="I">
         <li> First level</li>
         <ol type="A">
@@ -88,6 +93,7 @@
             </ol>
             <li>Images</li>
         </ol>
+       
         <ul type="disc">
            <li>Item1</li>
            <ul type="bullet">
@@ -110,20 +116,22 @@
            </ul>
         </ul>
     </ol>
-    
+    </div>
+    <br>
+    <div class="box2">
+        <h1>Custom image</h1>
     <ul style = " list-style-image: url(images/facebook.gif);">
         
         <li>facebook img1</li>
     </ul>
-
-
-        <ul style = " list-style-image: url(images/facebook.gif);">
+      <ul style = " list-style-image: url(images/facebook.gif);">
         <li>facebook img2</li>
     </ul>
     <ul style = " list-style-image: url(images/twitter.gif);">
         <li>Animated twitter img1</li>
         <li>Animated twitter img2</li>
     </ul>
+</div>
    
      <br>
     <div id="container">
