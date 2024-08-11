@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day7.html</title>
+   <style>
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family:'Times New Roman', Times, serif; 
+}
+body{
+    min-height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    background:rgb(173, 162, 230);
+}
+.container{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #d8c1c1;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(223, 144, 144, 0.1);
+
+}
+.container header{
+    font-size: 1.5rem;
+    color:#333;
+    font-weight: 500;
+    text-align: center;
+}
+.container .form{
+    margin-top: 30px;
+}
+.form .input-box{
+    width: 100%;
+    margin-top: 20px;
+    
+
+}
+.input-box label{
+color:#333;
+}
+
+.form .input-box input{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 20px;
+    border:1px solid #ddd;
+    border-radius: 6px;
+    padding: 0  15px;
+
+
+}
+.select-box select{
+    height: 50px;
+    width:100%;
+    outline: none;
+    border: none;
+    color:#707070;
+    font-size: 1rem;
+    border-radius: 6px;
+
+}
+button{
+    height: 55px;
+    width: 100%;
+    color:#fff;
+    font-size: 1rem;
+    border:none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400;
+    background-color: rgb(32, 132, 132);
+
+}
+/* .textarea{
+    padding: 6px 10px;
+    border:1px solid gray;
+    border-radius: 4px;
+    font-size: 15px;
+} */
+
+   </style>
+</head>
+<body>
+    <section class="container">
+    <header>Job Application Form</header>
+    <form action="#" class="form">
+        <div class="input-box">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter full name ">
+    </div>
+
+     <div class="input-box">
+        <label>E-mail address</label>
+        <input type="text" placeholder="abc@gmail.com">
+    </div>
+
+  
+    
+        <div class="input-box">
+            <label>Phone number</label>
+            <input type="number" >
+        </div>
+    
+    <div class="input-box">
+        <label>Birth-Date</label>
+        <input type="date" >
+    </div>
+    <div class="gender-box">
+       <h3>Gender</h3>
+       <div class="gender-option">
+         <div class="gender">
+           <input type="radio" id="check" name="gender">
+           <label for="check">Male</label>
+         </div>
+         <div class="gender">
+            <input type="radio" id="check" name="gender">
+            <label for="check">Female</label>
+          </div>
+          <div class="gender">
+            <input type="radio" id="check" name="gender">
+            <label for="check">Others</label>
+          </div>
+
+          <div class="Skill-box">
+            <h3>Skills</h3>
+            <div class="skills-option">
+              <div class="skill">
+                <input type="checkbox" id="check" name="HTML">
+                <label for="check">HTML</label>
+              </div>
+              <div class="skill">
+                 <input type="checkbox" id="check" name="Javascript">
+                 <label for="check">Javascript</label>
+               </div>
+               <div class="skill">
+                 <input type="checkbox" id="check" name="CSS">
+                 <label for="check">CSS</label>
+               </div>
+          <br>
+          
+          <div class="select-box">
+            <label>Job roles</label>
+            <select>
+                <option >Frontend Developer</option>
+                <option >Backend Developer</option>
+                <option >UI Designer</option>
+                <option >Game Developer</option>
+              
+            </select>
+        </div>
+
+         <div class="form-control">
+            <label for="aq">Upload your CV</label>
+            <br>
+            <br>
+            <input type="file" id="aq" name="aq">
+         </div>
+         <div class="select-box">
+            <label>Country</label>
+            <select>
+                <option >India</option>
+                <option >America</option>
+                <option >Italy</option>
+                <option >New-Zealand</option>
+                <option >China</option>
+                <option >Pakistan</option>
+                <option >Japan</option>
+            </select>
+        </div>
+
+         <div class="input-box">
+            <label>City</label>
+            <input type="text" placeholder="Enter your City">
+        </div>
+
+         <div class="input-box">
+            <label>Pin-code</label>
+            <input type="text" placeholder="Enter your pincode">
+        </div>
+        <br>
+        
+        <div class="textarea">
+            <label for="Address">Address</label>
+           <textarea name="Address" id="Address" cols="30" rows="20"></textarea>
+        </div>
+
+           
+          <button>SUBMIT</button>
+       </div>
+    </div>
+    </form>
+ 
+</section>
+</body>
+</html>
