@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body { 
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; 
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%; 
+            height: auto;
+            margin-bottom: 20px; 
+        }
+        td {
+            padding: 50px; 
+            border: 1px solid black;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            background: aquamarine;
+            border-radius: 3px;
+            display: inline-block; 
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <table id="we">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <button id="button">Change Color</button>
+    <script>
+        document.getElementById("button").addEventListener("click", function() {
+            document.getElementById("we").style.backgroundColor = "red";
+        });
+    </script>
+</body>
+</html>

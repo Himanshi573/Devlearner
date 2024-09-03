@@ -1,0 +1,81 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        background-color: bisque;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width:100vw;
+        height: 100vh;
+        overflow: hidden; 
+       }
+       h1{
+        font-size: 50px;
+        color: rgb(54, 63, 63);
+        margin-left: 0;
+       }
+       h2{
+        font-size: 30px;
+        margin:0;
+       }
+       .btn1{
+        padding:10px 10px;
+        margin-left: 10px;
+        font-size: 30px;
+        letter-spacing: 9px;
+        border-radius: 10px;
+       }
+    </style>
+</head>
+<body>
+
+    <h1>Counter</h1>
+  <h2 id="number">0</h2>
+  <div class="btn1">
+    <button id="b1" onclick="Increament()">Increament</button>
+    <button id="b2" onclick="Decreament()">Decreament</button>
+    <button id="b3" onclick="Reset()">Reset</button>
+    <button id="b4" onclick="Max()">Max</button>
+  </div>
+  
+  <script>
+    let num = document.getElementById("number");
+    let count=0;
+    function Increament(){
+     if(count < 50){
+       count=count+1;
+       num.innerHTML=count;
+     }
+    }
+    function Decreament(){
+     if(count > 0){
+       count=count-1;
+       num.innerHTML=count;
+     }
+     
+    }
+    function Reset(){
+      
+      count=0;
+      num.innerHTML=count;
+
+     }
+     function Max(){
+      
+      count=50;
+      num.innerHTML=count;
+
+     }
+
+
+  </script>
+</body>
+</html>
